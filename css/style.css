@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "HelveticaNeuePro";
+  src: url("fonts/HelveticaNeueLTPro-Bd.woff2") format("woff2");
+}
+@font-face {
+  font-family: HelveticaNeueProBold;
+  src: url(../fonts/HelveticaNeueLTProMd.woff2);
+}
+@font-face {
+  font-family: "HelveticaNeuePro-Thin";
+  src: url("fonts/HelveticaNeueLTProMd.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HelveticaNeuePro-Italic";
+  src: url("../fonts/HelveticaNeueLTProIt.woff2");
+}
+
+body {
+  background: #f6f8f7;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+}
+nav ul,
+nav li {
+  list-style: none;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav img {
+  height: 50px;
+}
+.navBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuMiTienda {
+  margin-left: 20px;
+}
+.menuMiTienda p {
+  font-family: "HelveticaNeuePro", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #360000;
+  letter-spacing: 0px;
+}
+.menuContacto {
+  margin-right: 40px;
+}
+
+.menu-desplegable {
+  position: fixed;
+  top: 0;
+  height: fit-content;
+  width: fit-content;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: #ffffffcc; /* los 88 se llaman alpha, lo que hace que sea más transparente, concretamente la mitad */
+  backdrop-filter: blur(2px);
+  padding: 15px 30px 25px 0px;
+  border: 1px solid #360000;
+  border-radius: 15px;
+}
+svg {
+  width: 100%;
+  border: 1px solid #360000;
+  border-radius: 8px;
+}
+.p-menuDesplegable {
+  font-family: "HelveticaNeuePro", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+
+.imagenPpal {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 15px;
+}
+article h3 {
+  font-family: "HelveticaNeuePro", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  padding-left: 5px;
+}
+article img {
+  display: block;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+article strong {
+  font-family: "HelveticaNeuePro", sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  padding-left: 2px;
+}
+article p {
+  font-family: "HelveticaNeuePro-Thin", sans-serif;
+  font-size: 0.75em;
+  font-weight: lighter;
+  letter-spacing: -0.1px;
+  padding-left: 2px;
+}
+.disposicionArticulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.articulos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+  padding: 0 4px;
+}
+
+article h4 {
+  font-size: 18px;
+  font-family: "HelveticaNeuePro", sans-serif;
+  letter-spacing: -0.3px;
+  margin: 40px 0 0 0;
+  padding-left: 5px;
+}
+.disposicionPropuesta {
+  width: 548px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-self: center; /* Centra el formulario */
+  margin: 20px 0 0 20px;
+  padding: 40px 40px 30px 40px;
+  background-color: #4f0e0e; /* buen color, parecido al famous brown, #360000, but más rojizo */
+  border-radius: 20px;
+  box-shadow: 0 0 20px #4e4e4e;
+  animation: appear linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 20%;
+}
+@keyframes appear {
+  from {
+    opacity: 0.7;
+    scale: 0.9;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.elemento {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+label {
+  text-align: left;
+  align-self: center;
+  font-family: "HelveticaNeuePro", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #fff1f1; /* blanco tirando a rojo */
+}
+input {
+  justify-self: start;
+  width: 250px;
+  height: fit-content;
+  display: flex;
+  flex-direction: right;
+  padding: 5px 10px;
+  border: 1px none #cae4db;
+  border-radius: 5px;
+  font-family: "HelveticaNeuePro-Thin", sans-serif;
+}
+.elemento-mensaje {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.label-mensaje {
+  align-self: flex-start; /* imp. sin esto el label de mensaje no se pone correctamente */
+}
+textarea {
+  width: 250px;
+  border: 1px none #cae4db;
+  border-radius: 7px;
+  padding: 5px 10px;
+  overflow: hidden;
+  line-height: 1;
+  font-family: "HelveticaNeuePro-Thin", sans-serif;
+}
+#boton-enviar {
+  width: fit-content;
+  height: fit-content;
+  margin: 20px 0 0 0;
+  padding: 5px 10px;
+  background-color: #cae4db;
+  color: #4f0e0e;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-family: "HelveticaNeuePro", sans-serif;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  padding: 120px 0 60px 0;
+  background: linear-gradient(
+    to bottom,
+    #f6f8f7,
+    #f8fafc,
+    #d9eafd,
+    #bcccdc,
+    #9aa6b2,
+    #89a8b2
+  );
+}
+footer p {
+  font-family: "HelveticaNeueProBold", sans-serif;
+  color: #360000;
+}
+footer p a:hover {
+  text-shadow: 0 0 20px #360000;
+}
+footer a {
+  color: inherit;
+}
