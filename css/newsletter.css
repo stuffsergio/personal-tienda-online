@@ -128,15 +128,15 @@ button {
   border: 1px solid #360000;
   border-radius: 7px;
   padding: 10px;
-  margin: 10px 20px 0 0;
+  margin: 10px 20px 150px 0;
   animation: appear linear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 30%;
+  animation-range: entry 20% cover 15%;
 }
 @keyframes appear {
   from {
     opacity: 0;
-    scale: 0.5;
+    scale: 0.7;
   }
   to {
     opacity: 1;
@@ -147,4 +147,39 @@ button:hover {
   background-color: #360000;
   color: #fff;
   box-shadow: 0 0 20px #360000b7;
+}
+
+@media (max-width: 400px) {
+  article {
+    height: 38vh;
+  }
+  h1 {
+    font-size: 32px;
+    padding: 80px 0 5px 0;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  .div00 {
+    padding: 30px 50px 0 50px;
+  }
+  .div01 {
+    gap: 10px;
+  }
+  article strong {
+    font-size: 16px;
+  }
+  article p {
+    font-size: 12px;
+  }
+  article img {
+    width: 80px;
+    height: 80px;
+  }
+  .texto-copy1 {
+    padding: 0 50px;
+  }
+  button {
+    z-index: 2;
+  }
 }
