@@ -149,7 +149,7 @@ button:hover {
   box-shadow: 0 0 20px #360000b7;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   article {
     height: 38vh;
   }
