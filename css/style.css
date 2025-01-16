@@ -238,7 +238,7 @@ textarea {
   letter-spacing: 0;
   display: flex;
   align-self: center;
-  cursor: pointer;
+  cursor: zoom-in;
 }
 #boton-enviar:hover {
   box-shadow: 0 0 14px #cae4db;
@@ -297,7 +297,7 @@ footer a {
     padding: 0 0 0 5px;
     margin-top: 15px;
   }
-  .disposicionPropuesta {
+  form {
     width: 330px;
     margin: 0 auto;
     padding: 20px 30px 10px 30px;
@@ -317,7 +317,7 @@ footer a {
   .label-mensaje {
     padding-right: 20px;
   }
-  footer {
-    background: #fff;
+  #boton-enviar {
+    margin-bottom: 15px;
   }
 }

@@ -63,7 +63,7 @@
         </div>
 
         <h4 id="participar">Trabaja con <i>Nosotros</i></h4>
-        <div class="disposicionPropuesta">
+        <form method="post" class="disposicionPropuesta">
           <div class="elemento">
             <label for="email">Correo electrónico</label>
             <input type="email" name="email" id="input-email">
@@ -76,16 +76,12 @@
             <label class="label-mensaje" for="mensaje">Mensaje</label>
             <textarea rows="7" cols="33" maxlength="none" name="mensaje" id="textarea-mensaje"></textarea>
           </div>
-          <button id="boton-enviar" type="submit">Enviar</button>
-        </div>
+          <input id="boton-enviar" type="submit">Enviar</input>
+        </form>
     </article>
     <footer>
       <p>Una iniciativa de <a href="https://www.instagram.com/stuffsergio/"><strong class="enlace-instagram-personal">@stuffsergio</strong></a></p>
     </footer>
-    
-    
-    <!--<iframe style="border-radius:12px, margin:10px" src="https://open.spotify.com/embed/artist/0Ty63ceoRnnJKVEYP0VQpk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
-
     <script src="js/index.js"></script>
   </body>
 </html>
