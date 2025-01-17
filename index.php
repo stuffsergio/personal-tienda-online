@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="features/43.-Harvest-Gold.jpg" type="image/x-icon" />
-  <script
+  <!--<script
     src="https://kit.fontawesome.com/887a835504.js"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>-->
   <title>Formulario | W3C</title>
 </head>
 
