@@ -238,7 +238,7 @@ textarea {
   letter-spacing: 0;
   display: flex;
   align-self: center;
-  cursor: pointer;
+  cursor: zoom-in;
 }
 #input-enviar:hover {
   box-shadow: 0 0 14px #cae4db;
