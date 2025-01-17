@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "HelveticaNeuePro";
-  src: url("fonts/HelveticaNeueLTPro-Bd.woff2") format("woff2");
+  src: url("../fonts/HelveticaNeueLTPro-Bd.woff2") format("woff2");
 }
 @font-face {
   font-family: "HelveticaNeuePro-Thin";
@@ -152,7 +152,7 @@ article h4 {
   margin: 20px 0 0 0;
   padding-left: 5px;
 }
-.disposicionPropuesta {
+#disposicionPropuesta {
   width: 548px;
   height: fit-content;
   display: flex;
@@ -224,7 +224,7 @@ textarea {
   line-height: 1;
   font-family: "HelveticaNeuePro-Thin", sans-serif;
 }
-#boton-enviar {
+#input-enviar {
   width: fit-content;
   height: fit-content;
   margin: 20px 0 0 0;
@@ -240,7 +240,7 @@ textarea {
   align-self: center;
   cursor: pointer;
 }
-#boton-enviar:hover {
+#input-enviar:hover {
   box-shadow: 0 0 14px #cae4db;
 }
 
@@ -297,7 +297,7 @@ footer a {
     padding: 0 0 0 5px;
     margin-top: 15px;
   }
-  .disposicionPropuesta {
+  #disposicionPropuesta {
     width: 330px;
     margin: 0 auto;
     padding: 20px 30px 10px 30px;
@@ -317,7 +317,7 @@ footer a {
   .label-mensaje {
     padding-right: 20px;
   }
-  footer {
-    background: #fff;
+  #input-enviar {
+    padding-bottom: 15px;
   }
 }
