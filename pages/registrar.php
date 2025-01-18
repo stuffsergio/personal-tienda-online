@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
     // Redirigir a la misma página o a una página de éxito
-    header('Location: pages/newsletter.html');
+    header('Location: ../index.html');
     exit;
 }
 ?>

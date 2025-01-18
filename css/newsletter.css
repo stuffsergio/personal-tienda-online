@@ -94,22 +94,20 @@ article img {
   width: 240px;
   height: 240px;
 }
-@media (max-width: 500px) {
-  h1 {
-    font-size: 16px;
-  }
-}
+
 .texto-copy1 {
-  text-align: left;
+  text-align: center;
   padding: 0 150px 50px 150px;
 }
 .texto-copy1 p {
   padding: 5px;
-  font-family: "HelveticaNeuePro";
+  font-family: "HelveticaNeuePro", sans-serif;
   letter-spacing: 0.3px;
+  font-size: 36px;
 }
 .texto-copy1 p:nth-child(1) {
   padding-bottom: 20px;
+  font-size: 40px;
 }
 .texto-copy1 p:nth-child(7) {
   padding: 20px 0 20px 5px;
@@ -190,6 +188,7 @@ button:hover {
   }
   .texto-copy1 {
     padding: 0 50px;
+    font-size: 8px;
   }
   button {
     z-index: 2;
