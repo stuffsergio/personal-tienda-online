@@ -16,9 +16,13 @@
   font-family: "HelveticaNeuePro-Italic";
   src: url("../fonts/HelveticaNeueLTProIt.woff2");
 }
+@font-face {
+  font-family: "BethanyElingston";
+  src: url(../fonts/Bethany-Elingston-BF64722e23853b3.woff2);
+}
 
 body {
-  background: #f6f8f7;
+  background: #fff;
 }
 a {
   text-decoration: none;
@@ -41,7 +45,8 @@ nav a {
   align-items: center;
 }
 nav img {
-  height: 50px;
+  height: 42px;
+  margin-top: 4px;
 }
 .navBar {
   width: 100%;
@@ -128,7 +133,7 @@ article strong {
 article p {
   font-family: "HelveticaNeuePro-Thin", sans-serif;
   font-size: 0.8em;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: -0.1px;
   padding-left: 2px;
 }
@@ -162,9 +167,10 @@ footer {
   );*/
 }
 footer p {
-  font-family: "HelveticaNeuePro", sans-serif;
-  font-weight: 500;
+  font-family: "BethanyElingston", sans-serif;
+  font-weight: 700;
   color: #360000;
+  font-size: 14px;
 }
 footer p a:hover {
   text-shadow: 0 0 20px #360000;
@@ -177,11 +183,25 @@ footer a {
   .menuMiTienda {
     margin-left: 40px;
   }
+  .menuMiTienda p {
+    font-size: 12px;
+  }
+  nav img {
+    height: 32px;
+    margin-top: 6px;
+  }
   .menuContacto {
     margin-right: 40px;
   }
+  svg {
+    width: 22px;
+    height: 22px;
+  }
   .menu-desplegable {
     padding: 15px 30px 25px 20px;
+  }
+  .p-menuDesplegable {
+    font-size: 12px;
   }
   article {
     margin: 30px 15px 0px 15px;
@@ -193,32 +213,12 @@ footer a {
   article strong {
     font-size: 11px;
   }
-  article h4 {
-    font-size: 14px;
-    padding: 0 0 0 5px;
-    margin-top: 15px;
+
+  footer {
+    margin: 50px;
+    padding: 0;
   }
-  #disposicionPropuesta {
-    width: 330px;
-    margin: 0 auto;
-    padding: 20px 30px 10px 30px;
-  }
-  .elemento {
-    display: flex;
-    flex-direction: row;
-  }
-  label {
-    flex: 1;
+  footer p {
     font-size: 11px;
-  }
-  input {
-    flex: 2;
-    width: 80px;
-  }
-  .label-mensaje {
-    padding-right: 20px;
-  }
-  #input-enviar {
-    padding-bottom: 15px;
   }
 }

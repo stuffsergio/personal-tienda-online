@@ -7,6 +7,10 @@
   font-family: BethanyElingston;
   src: url(../fonts/Bethany-Elingston-BF64722e23853b3.woff2);
 }
+@font-face {
+  font-family: HelveticaNeuePro;
+  src: url(../fonts/HelveticaNeueLTPro-Bd.woff2);
+}
 body {
   background-color: #000000;
 }
@@ -47,11 +51,11 @@ label {
   width: fit-content;
   text-align: left;
   align-self: center;
-  font-family: "BethanyElingston", sans-serif;
+  font-family: "HelveticaNeuePro", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1.2px;
-  color: #fff1f1;
+  letter-spacing: 0.2px;
+  color: #fff;
 }
 input {
   justify-self: start;
@@ -63,8 +67,8 @@ input {
   border: 1px none #cae4db;
   border-radius: 5px;
   font-family: "BethanyElingston", sans-serif;
-  background-color: #000000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 .elemento-mensaje {
   display: flex;
@@ -93,7 +97,7 @@ textarea {
   color: #1c3e33;
   border: 1px solid #fff;
   border-radius: 10px;
-  font-family: "BethanyElingston", sans-serif;
+  font-family: "HelveticaNeuePro", sans-serif;
   font-weight: 600;
   letter-spacing: 0;
   display: flex;
@@ -138,4 +142,71 @@ a {
   font-family: "BethanyElingston", sans-serif;
   font-weight: bold;
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 440px) {
+  article h4 {
+    font-size: 14px;
+    margin: 50px 0 50px 45px;
+  }
+  #disposicionPropuesta {
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px 18px 10px 15px;
+  }
+  .elemento {
+    display: flex;
+    flex-direction: row;
+  }
+  label {
+    flex: 1;
+    font-size: 9px;
+    padding-left: 6px;
+  }
+  input {
+    flex: 2;
+    font-size: 10px;
+  }
+  .label-mensaje {
+    padding-right: 20px;
+  }
+  textarea {
+    width: 170px;
+    height: 80px;
+    font-size: 10px;
+  }
+  #input-enviar {
+    margin: 5px 0 5px 0;
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 46px 40px 0 0;
+  }
+  section button {
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 7px;
+  }
+  .button1 {
+    border: 1px solid #606060;
+    background-color: #000000;
+    color: #fff;
+    font-family: "BethanyElingston", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .button2 {
+    border: 1px solid #fff;
+    background-color: #00ffae;
+    color: #1c3e33;
+    font-family: "BethanyElingston", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
 }
