@@ -171,13 +171,13 @@ a {
     padding-right: 20px;
   }
   textarea {
-    width: 170px;
+    width: 163px;
     height: 80px;
     font-size: 10px;
   }
   #input-enviar {
     margin: 5px 0 5px 0;
-    padding: 5px 5px;
+    padding: 6px 6px 4px 6px;
     font-size: 10px;
   }
   section {
@@ -188,8 +188,10 @@ a {
   }
   section button {
     width: fit-content;
-    padding: 4px 8px;
+    padding: 6px 6px 4px 6px;
     border-radius: 7px;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
   }
   .button1 {
     border: 1px solid #606060;
@@ -197,7 +199,7 @@ a {
     color: #fff;
     font-family: "BethanyElingston", sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.5px;
   }
   .button2 {
@@ -206,7 +208,7 @@ a {
     color: #1c3e33;
     font-family: "BethanyElingston", sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.5px;
   }
 }
