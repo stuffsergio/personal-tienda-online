@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.custom-gradient {
+  position: absolute;
+  inset: 0; /* Equivalente a top: 0; right: 0; bottom: 0; left: 0 */
+  z-index: -10; /* Equivalente a -z-10 */
+  height: 100%; /* h-full */
+  width: 100%; /* w-full */
+  display: flex; /* Para centrar elementos si fuera necesario */
+  align-items: center; /* items-center */
+  padding: 6rem 1.25rem; /* px-5 (1.25rem) y py-24 (6rem) */
+  background: radial-gradient(
+    125% 125% at 50% 10%,
+    #000 40%,
+    #63e 100%
+  ); /* Degradado radial */
+}
+
+:root {
+  --bg-color: #09090b;
+  --white-color: #fafafa;
+  --primary-color: #27272a;
+  --secondary-color: #ff6500;
+  --border-radius: 18px;
+  --box-shadow: 0 0 12px #b0b0b046;
+}
+
+h4 {
+  margin: 80px 0 60px 0;
+  text-align: center;
+  overflow-x: hidden;
+
+  font-family: "Geist", sans-serif; /* pedazo fuente locoo */
+  font-size: 32px;
+  color: var(--white-color);
+  text-shadow: 0 0 10px #ff660086;
+
+  letter-spacing: -0.5px;
+  background-image: url(../features/mesh-gradient-sol.webp);
+  background-size: 30%;
+  background-repeat: repeat;
+  background-clip: text; /* El fondo se aplica al texto */
+  color: transparent; /* Para que se vea el fondo */
+}
+h4:hover {
+  opacity: 90%;
+  scale: 1.01;
+  transition: all 0.2s ease;
+}
+.icono-sol {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px;
+}
+g,
+line {
+  stroke: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+
+#weatherForm {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  place-content: center;
+  margin: 40px;
+}
+.buscadorCiudad {
+  display: flex;
+  flex-direction: row;
+}
+input {
+  font-family: "Geist", sans-serif;
+  padding: 12px 16px;
+  font-size: 11px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-color);
+  color: var(--white-color);
+}
+input:focus {
+  outline: none; /* Quitamos el borde al estar dentro del elemento */
+}
+input::placeholder {
+  color: #fafafa7c;
+}
+.icon-input {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 15px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+button {
+  font-family: "Geist", sans-serif;
+  padding: 10px 12px;
+  font-size: 12px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  color: var(--white-color);
+}
+button:hover {
+  scale: 0.95;
+  opacity: 85%;
+  transition: all 0.3s ease-in;
+}
+
+section {
+  align-self: center;
+}

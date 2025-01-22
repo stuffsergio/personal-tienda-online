@@ -1,0 +1,304 @@
+<!--<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/weather.css" />
+    <link
+      rel="shortcut icon"
+      href="../features/weather-icons-44-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <title>API Tiempo | Weather</title>
+  </head>
+  <body>
+    <h4>Aquí podrás ver la temperatura actual de tu ubicación</h4>
+    <svg
+      class="icono-sol"
+      xmlns="http://www.w3.org/2000/svg"
+      height="20"
+      width="20"
+      viewBox="0 0 20 20"
+    >
+      <g fill="#212121" class="nc-icon-wrapper">
+        <circle cx="10" cy="10" r="4" stroke-width="0"></circle>
+        <line
+          x1="10"
+          y1="2"
+          x2="10"
+          y2="3.5"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="15.657"
+          y1="4.343"
+          x2="14.596"
+          y2="5.404"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="18"
+          y1="10"
+          x2="16.5"
+          y2="10"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="15.657"
+          y1="15.657"
+          x2="14.596"
+          y2="14.596"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="10"
+          y1="18"
+          x2="10"
+          y2="16.5"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="4.343"
+          y1="15.657"
+          x2="5.404"
+          y2="14.596"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="2"
+          y1="10"
+          x2="3.5"
+          y2="10"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="4.343"
+          y1="4.343"
+          x2="5.404"
+          y2="5.404"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+      </g>
+    </svg>
+
+    <section>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="Escribe aquí..."
+        autocomplete="off"
+      />
+      <button onclick="mostrarValor()">Mostrar</button>
+    </section>-->
+
+<!--<form id="weatherForm">
+      <div class="buscadorCiudad">
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Ciudad"
+          autocomplete="off"
+          required
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1024 1024"
+          fill="#fff"
+        >
+          <path
+            d="M2.04932 12.9999H7.52725C7.70624 16.2688 8.7574 19.3053 10.452 21.8809C5.98761 21.1871 2.5001 17.5402 2.04932 12.9999ZM2.04932 10.9999C2.5001 6.45968 5.98761 2.81276 10.452 2.11902C8.7574 4.69456 7.70624 7.73111 7.52725 10.9999H2.04932ZM21.9506 10.9999H16.4726C16.2936 7.73111 15.2425 4.69456 13.5479 2.11902C18.0123 2.81276 21.4998 6.45968 21.9506 10.9999ZM21.9506 12.9999C21.4998 17.5402 18.0123 21.1871 13.5479 21.8809C15.2425 19.3053 16.2936 16.2688 16.4726 12.9999H21.9506ZM9.53068 12.9999H14.4692C14.2976 15.7828 13.4146 18.3732 11.9999 20.5915C10.5852 18.3732 9.70229 15.7828 9.53068 12.9999ZM9.53068 10.9999C9.70229 8.21709 10.5852 5.62672 11.9999 3.40841C13.4146 5.62672 14.2976 8.21709 14.4692 10.9999H9.53068Z"
+          ></path>
+        </svg>
+      </div>
+      <button type="submit">Mostrar</button>
+    </form>
+
+    <p id="weather"></p>
+    <h1>Clima en tu ciudad</h1>
+    <p id="weather"></p>
+
+    <script src="../js/weather.js"></script>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/weather.css" />
+    <link
+      rel="shortcut icon"
+      href="../features/weather-icons-44-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <title>API Tiempo | Weather</title>
+  </head>
+  <div class="custom-gradient"></div>
+  <body>
+    <svg
+      class="icono-sol"
+      xmlns="http://www.w3.org/2000/svg"
+      height="20"
+      width="20"
+      viewBox="0 0 20 20"
+    >
+      <g fill="#212121" class="nc-icon-wrapper">
+        <circle cx="10" cy="10" r="4" stroke-width="0"></circle>
+        <line
+          x1="10"
+          y1="2"
+          x2="10"
+          y2="3.5"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="15.657"
+          y1="4.343"
+          x2="14.596"
+          y2="5.404"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="18"
+          y1="10"
+          x2="16.5"
+          y2="10"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="15.657"
+          y1="15.657"
+          x2="14.596"
+          y2="14.596"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="10"
+          y1="18"
+          x2="10"
+          y2="16.5"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="4.343"
+          y1="15.657"
+          x2="5.404"
+          y2="14.596"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="2"
+          y1="10"
+          x2="3.5"
+          y2="10"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+        <line
+          x1="4.343"
+          y1="4.343"
+          x2="5.404"
+          y2="5.404"
+          stroke="#8c8d8f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          data-color="color-2"
+        ></line>
+      </g>
+    </svg>
+    <h4>Consulta el Clima</h4>
+    <form id="weatherForm">
+      <div class="icon-input">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#ff6500"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-map"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" />
+          <path d="M9 4v13" />
+          <path d="M15 7v13" />
+        </svg>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Escribe aquí"
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit">Verify</button>
+    </form>
+    <script src="../js/weather.js"></script>
+  </body>
+</html>

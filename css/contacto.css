@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-background {
+  position: absolute; /* Hace que el div se posicione en relación al viewport */
+  inset: 0; /* Define top: 0, right: 0, bottom: 0, left: 0 */
+  z-index: -10; /* Envía el div detrás de otros elementos */
+  height: 100%; /* Ocupa el 100% de la altura del contenedor */
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  background-color: white; /* Fondo blanco base */
+  background: radial-gradient(
+    125% 125% at 50% 10%,
+    /* Posición y tamaño del degradado */ #fff 40%,
+    /* Blanco al 40% */ #63e 100% /* Azul claro en el 100% */
+  );
+}
