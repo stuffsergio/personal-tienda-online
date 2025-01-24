@@ -9,15 +9,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
 
     // Validar que los campos no estén vacíos
     if (!empty($nombre) && !empty($email) && !empty($mensaje)) {
+        // Consulta SQL
         $sql = "INSERT INTO datos (nombre, email, mensaje) VALUES ('$nombre', '$email', '$mensaje')";
 
+        // Ejecutar consulta y verificar errores
         if (mysqli_query($conn, $sql)) {
-            echo "<script>document.getElementById('mensajeExito').innerText = 'Registro exitoso';</script>";
+            echo "Registro exitoso";
         } else {
-            echo "Error: " . mysqli_error($conn);
+            echo "Error en la consulta: " . mysqli_error($conn);
         }
     } else {
-        echo "Por favor, completa todos los campos.";
+        echo "Por favor, completa todos los campos";
     }
 } else {
     echo "Acceso no permitido.";

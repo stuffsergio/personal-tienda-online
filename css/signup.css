@@ -108,6 +108,10 @@ textarea {
   box-shadow: 0 0 8px #8d8989;
 }
 
+.mensajeExito {
+  font-family: "HelveticaNeuePro", sans-serif;
+}
+
 section {
   position: absolute;
   top: 0;
