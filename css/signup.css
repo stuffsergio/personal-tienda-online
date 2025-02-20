@@ -102,6 +102,9 @@ textarea {
   letter-spacing: 0;
   display: flex;
   align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   cursor: crosshair;
 }
 #input-enviar:hover {

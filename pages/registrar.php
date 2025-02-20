@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])) {
         // Ejecutar consulta y verificar errores
         if (mysqli_query($conn, $sql)) {
             echo "Registro exitoso";
+            header("Location: ../index.html");
         } else {
             echo "Error en la consulta: " . mysqli_error($conn);
         }
